@@ -123,9 +123,10 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export TERM=alacritty
-export PATH="/home/eg/.pixi/bin:$PATH"
+export PATH="$HOME/.pixi/bin:$PATH"
 autoload -Uz compinit && compinit  # redundant with Oh My Zsh
 eval "$(pixi completion --shell zsh)"
 
 # Handle dotfiles git repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias s="kitten ssh"
