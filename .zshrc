@@ -131,4 +131,7 @@ eval "$(pixi completion --shell zsh)"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias s="kitten ssh"
 
+# include go binary directory
+export PATH="$HOME/go/bin/:$PATH"
+# export $HOME/Notes as main directory for ZK notebooks
 export ZK_NOTEBOOK_DIR="$HOME/Notes/"
