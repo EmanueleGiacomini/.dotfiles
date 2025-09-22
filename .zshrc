@@ -130,3 +130,5 @@ eval "$(pixi completion --shell zsh)"
 # Handle dotfiles git repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias s="kitten ssh"
+
+export ZK_NOTEBOOK_DIR="$HOME/Notes/"
