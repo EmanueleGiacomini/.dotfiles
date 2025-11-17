@@ -50,7 +50,9 @@ return {
         optional = true,
         opts = function(_, opts)
           if (vim.g.colors_name or ""):find("catppuccin") then
-            opts.highlights = require("catppuccin.special.bufferline").get_theme()
+            local bufferline = require("catppuccin.groups.integrations.bufferline")
+            bufferline.get = bufferline.get or bufferline.get_theme
+            opts.highlights = bufferline.get()
           end
         end,
       },
