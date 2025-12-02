@@ -135,3 +135,4 @@ alias s="kitten ssh"
 export PATH="$HOME/go/bin/:$PATH"
 # export $HOME/Notes as main directory for ZK notebooks
 export ZK_NOTEBOOK_DIR="$HOME/Notes/"
+
